@@ -55,13 +55,13 @@ body {
     display: none;
   }
   .imageContainer {
-    height: 250px;
-    width:250px;
+    height: 260px;
+    width:260px;
     overflow: hidden;
   }
   img {
-    width: 50%;
-    height: 50%
+    width: 60%;
+    height: 60%
   }
 }
 
