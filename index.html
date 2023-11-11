@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy B-day Sammy!</title>
+    <style>
+        body {
+    background: url(/Static/Spooky.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 5%;   
+}
+
+button {
+    margin: 15px;
+    padding: 5%;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: black;
+    font-weight: 1000;
+    font-size: 30px;
+    background-color: orange;
+    transition: transform .2s;
+}
+
+input {
+    font-size: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h1>Happy B-day Sammy!!</h1>
+        <h4>Input Sammy's b-day to continue</h4>
+        <input type="date" id="date">
+        <br>
+        <button onclick="getDate()">Submit</button>
+    </div>
+    <script src="/Scripts/unlocker.js"></script>
+</body>
+</html>
