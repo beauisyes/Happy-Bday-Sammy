@@ -2,7 +2,7 @@ var DisplayedImage = document.getElementById("Cat_Image");
 
 var imgNumber = 1;
 
-DisplayedImage.src = '/Static/Cat1.jpg';
+DisplayedImage.src = 'Cat1.jpg';
 
 function imageLeft(){
     if(imgNumber == 1) {
@@ -10,7 +10,7 @@ function imageLeft(){
     } else {
         imgNumber --;
     }
-    var NewImage = '/Static/Cat' + String(imgNumber) + '.jpg';
+    var NewImage = 'Cat' + String(imgNumber) + '.jpg';
     console.log(NewImage);
     DisplayedImage.src = NewImage;
 }
@@ -21,7 +21,7 @@ function imageRight(){
     } else {
         imgNumber ++;
     }
-    var NewImage = '/Static/Cat' + String(imgNumber) + '.jpg';
+    var NewImage = 'Cat' + String(imgNumber) + '.jpg';
     console.log(NewImage);
     DisplayedImage.src = NewImage;
 }
