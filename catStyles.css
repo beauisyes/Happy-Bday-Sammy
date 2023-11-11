@@ -45,6 +45,12 @@ body {
   }
 }
 
+@media (max-width: 414px} {
+  .title {
+    display: none;
+  }
+}
+
 .imageContainer {
     height: 500px;
     width:500px;
