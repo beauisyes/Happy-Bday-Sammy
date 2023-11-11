@@ -43,13 +43,28 @@ body {
   .title {
     font-size: 5rem;
   }
-}
-
-.imageContainer {
-    height: 500px;
-    width:500px;
+  .imageContainer {
+    height: 400px;
+    width:400px;
     overflow: hidden;
 }
+}
+
+@media (max-width: 514px) {
+  .title {
+    display: none;
+  }
+  .imageContainer {
+    height: 250px;
+    width:250px;
+    overflow: hidden;
+  }
+  img {
+    width: 50%;
+    height: 50%
+  }
+}
+
 
 img {
     width: 85%;
