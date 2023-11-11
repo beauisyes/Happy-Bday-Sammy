@@ -1,3 +1,55 @@
-<html>
-  <title>Personal Message</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Message</title>
+    <style>
+        body {
+            text-align: center;
+            background: url(/Static/backgroundMessage.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: flex;
+        }
+
+        #body {
+            background-color: antiquewhite;
+            border: solid black 3px;
+            border-radius: 20px;
+            width:max-content;
+            justify-content: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        
+        button {
+            padding: 2%;
+            border-radius: 15px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+    <h1>Need Password</h1>
+    <h2>Hint: The muffin man lives here. Wrong Answer</h2>
+    <textarea id="input" style="width: 200px; height: 30px; resize: none;"></textarea>
+    <br>
+    <button onclick="redirect()">Submit</button>
+    </div>
+    <script>
+        function redirect() {
+            value = document.getElementById("input").value;
+            if(value == "Blueberry lane" || value == "blueberry lane") {
+                window.location.href = "/personalmessage.html";
+            }
+        }
+    </script>
+</body>
 </html>
